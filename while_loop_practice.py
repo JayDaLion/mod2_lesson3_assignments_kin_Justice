@@ -75,7 +75,7 @@ while coffee_types:
 
      
      
-# Smart Coffee Machine
+"""# Smart Coffee Machine
 
 coffee_reservoir = 10
 coffee_types = ["espresso", "cappuccino", "latte", "americano", "black"]
@@ -91,4 +91,43 @@ while coffee_reservoir > 0:
         print("no more locked doors")
         break
 
-print("ALL GONE")
+print("ALL GONE")"""
+
+"""#ELLLEVATORRR
+floor = 5
+request_stops = [1, 3, 4]
+while floor> 0:
+    if floor in request_stops:
+        print(f"Stopping at Floor {floor}")
+        request_stops.remove(floor)
+
+    floor -= 1 #has to be outside the if statement or it wouldnt run
+    print(f"Descending to floor {floor}")"""
+
+"""#traffic light
+
+traffic_lights = ['red', 'yellow', 'green', 'yellow']
+green_count = 0
+
+while True:
+    for color in traffic_lights:
+        print(f"The traffic light is now {color}")
+        if color == 'green'.lower():
+            green_count += 1
+            if green_count == 3:
+                print("stop")
+                break
+    if green_count == 3: #without this it would be an endless loop
+        break"""
+        
+"""#skipping rope?
+countdown = 30
+landed_numbers = []
+
+while countdown > 0:
+    countdown -= 1
+    if countdown % 2 == 1:
+        continue
+    landed_numbers.append(countdown)
+
+print("Numbers landed on:",landed_numbers[::1])"""
